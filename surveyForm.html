@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>General Survey</title>
+</head>
+<style>
+.survey{
+    font-size: 180%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    background-color: rgb(243, 194, 141);
+    padding:15px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 35%;
+}
+body{
+ background-color: rgb(247, 226, 193); 
+}
+.box{
+    margin:20%;
+    padding: 10px;
+}
+.f1{
+    background-color: rgb(242, 237, 230);
+    padding: 20px;
+    font-weight: bold;
+}
+.f2{
+    background-color: rgb(242, 237, 230);
+    padding: 20px;
+    font-weight: bold;
+}
+.b1{
+    background-color: rgb(154, 201, 126);
+    border-radius: 10px;
+    border-color:rgb(178, 173, 173);
+    padding: 5px;
+}
+.b1:hover{
+    background-color: rgb(66, 165, 8);
+    border-radius: 10px;
+    border-color:black
+}
+.b2{
+    background-color: rgb(242, 135, 135);
+     border-radius: 10px;
+     border-color:rgb(178, 173, 173);
+     padding: 5px;
+}
+.b2:hover{
+    background-color: rgb(235, 71, 71); border-radius: 10px;border-color:black;
+}
+.button{
+   padding-left: 38%;
+}
+.choice{
+    font-size: 140%;
+}
+
+</style>
+<body class="box">
+    <form action="thankyou2.html">
+    <label class="survey">General Survey</label><br><br><br><br>
+    
+    <fieldset class="f1">
+       
+        <legend style="font-weight: 10mm;font-size: 180%;color: rgb(138, 66, 8);">About Yourself</legend><br>
+    
+        <label for="name" style="font-size: 140%;">Name</label>
+        <input type="text" id="name" placeholder="First-Middle-last name"
+         required><br><br>
+
+         <label for="email"style="font-size: 140%;">Email id</label>
+         <input type="email" id="email" placeholder="abc@xyz.com" required> <br><br>
+         
+         <label for="password" style="font-size: 140%;">Password</label>
+         <input type="password" id="password"  required> <br><br>
+
+         <label for="age" style="font-size: 140%;">Age</label>
+         <input type="number"" id="age" required> <br><br>
+
+    </fieldset> <br><br>
+    <fieldset class="f2">
+        <legend style="font-weight: 10mm;font-size: 180%; color: rgb(138, 66, 8);">Preferences</legend>
+        <label for="role" style="font-size: 140%;">Which option best describes your curent role</label>
+        <select id="role">
+            <option value="student">Student</option>
+            <option value="parent">Parent</option>
+            <option value="professor">Professor</option>
+            <option value="other">Other</option>
+        </select><br><br><br>
+        
+
+        <label for="course" style="font-size: 140%;">How likely is that you would recemmend this course to a friend</label>
+        <div class="choice">
+        <br><br><input type="radio" name="course"> Definetely 
+
+        <label for="maybe" style="font-size: 140%;"></label>
+        <br><input type="radio" name="maybe"> Maybe
+
+        <label for="notsure" style="font-size: 10%;"></label>
+        <br><input type="radio" name="notsure" > Not sure
+        </div>
+
+        <br><br><label for="like" style="font-size: 140%;">What did you like most in the course</label>
+        <select id="like">
+            <option value="everything">Everything</option>
+            <option value="softskils">soft skills</option>
+            <option value="content">Content</option>
+            <option value="structure">Course Structure</option>
+            <option value="coverage">Concept coverage</option>
+        </select><br><br><br>
+
+        <label style="font-size: 140%;">Things that shouldbe improved in the future <br>
+            (check all that apply)</label> <br><br>
+        
+        <input type="checkbox" id="front">
+        <label for="front" style="font-size: 140%;">Front End</label><br>
+        
+        <input type="checkbox" id="back">
+        <label for="back" style="font-size: 140%;">Back End</label><br>
+        
+        <input type="checkbox" id="data">
+        <label for="data" style="font-size: 140%;">Data Visualisation</label>
+        
+    </fieldset><br>
+    <div class="button">
+    <button type="reset"class=b2 style="font-size: 130%; font-family: 'Times New Roman', Times, serif;">Reset</button>
+    <button type="submit"class=b1 style="font-size: 130%;font-family: 'Times New Roman', Times, serif;">Submit</button>
+    </div>
+    </form>
+</body>
+</html>
